@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradation_asset"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_circle"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="37dp"
+        android:src="@drawable/ic_login_circle"
+        app:layout_constraintBottom_toTopOf="@id/login_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="26dp"
+        android:src="@drawable/key"
+        app:layout_constraintBottom_toBottomOf="@id/login_circle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/login_circle" />
+
+    <ImageView
+        android:id="@+id/login_box"
+        android:layout_width="298dp"
+        android:layout_height="320dp"
+        android:src="@drawable/ic_login_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/login_txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="37dp"
+        android:lineSpacingExtra="1.9sp"
+
+        android:text="아이디"
+        android:textColor="#735733"
+        android:textSize="9.4sp"
+        app:layout_constraintLeft_toLeftOf="@id/login_box"
+
+
+        app:layout_constraintTop_toTopOf="@id/login_box" />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="10dp"
+        android:hint="입력하세요"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/login_txt_login"
+        app:layout_constraintRight_toRightOf="@id/login_box"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_login" />
+
+    <TextView
+        android:id="@+id/login_txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="1.9sp"
+        android:text="비밀번호"
+        android:textColor="#735733"
+        android:textSize="9.4sp"
+        app:layout_constraintLeft_toLeftOf="@id/login_txt_login"
+        app:layout_constraintTop_toBottomOf="@id/login_id" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="입력하세요"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/login_txt_password"
+        app:layout_constraintRight_toRightOf="@id/login_id"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_password"
+
+        />
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="218dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_login_btn"
+        android:gravity="center"
+        android:text="로그인"
+
+        android:textColor="#fff"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_password" />
+
+    <TextView
+        android:id="@+id/login_txt_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="1.4sp"
+        android:text="꾸러미 회원이 아니신가요? "
+        android:textColor="#735733"
+        android:textSize="7.1sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="@id/login_btn"
+        app:layout_constraintRight_toLeftOf="@id/login_register"
+        app:layout_constraintTop_toBottomOf="@id/login_btn" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:lineSpacingExtra="2sp"
+        android:text="회원가입"
+        android:textColor="#ff9000"
+        android:textSize="9.9sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/login_txt_infor"
+        app:layout_constraintLeft_toRightOf="@id/login_txt_infor"
+        app:layout_constraintRight_toRightOf="@id/login_btn"
+        app:layout_constraintTop_toTopOf="@id/login_txt_infor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
